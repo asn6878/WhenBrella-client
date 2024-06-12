@@ -1,4 +1,3 @@
-import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const S = {
@@ -10,7 +9,7 @@ const S = {
         height: 100px;
         background: #CAFCF9;
     `,
-    Title: styled.a`
+    Title: styled.div`
         color: #000;
         font-family: Noto Sans KR;
         font-size: 20px;
@@ -18,8 +17,9 @@ const S = {
         font-weight: 700;
         line-height: normal;
         margin-left: 446px;
+
     `,
-    Login: styled.a`
+    Login: styled.button`
         width: 100px;
         height: 55px;
         display: flex;
@@ -37,7 +37,7 @@ const S = {
     `,
 }
 
-export default function MainHeader(props) {
+const MainHeader= () => {
     return (
         <S.Container>
             <S.Title href="#">WhenBrella</S.Title>
@@ -45,3 +45,5 @@ export default function MainHeader(props) {
         </S.Container>
     );
 }
+
+export default MainHeader;
