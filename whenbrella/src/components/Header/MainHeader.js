@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const S = {
     Container: styled.div`
         display: flex;
-        justify-content: space-between; /* 왼쪽과 오른쪽에 요소 배치 */
+        justify-content: center; /* 왼쪽과 오른쪽에 요소 배치 */
         align-items: center; /* 수직 중앙 정렬 */
         width: 100%;
         height: 100px;
@@ -11,13 +11,12 @@ const S = {
     `,
     Title: styled.div`
         color: #000;
-        font-family: Noto Sans KR;
-        font-size: 20px;
+        font-family: "Noto Sans";
+        font-size: 52px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         line-height: normal;
-        margin-left: 446px;
-
+        margin-right: 682px;
     `,
     Login: styled.button`
         width: 100px;
@@ -33,7 +32,6 @@ const S = {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        margin-right: 443px;
     `,
 }
 
