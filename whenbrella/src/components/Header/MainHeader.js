@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useNavigate } from 'react-router';
 
 const S = {
     Container: styled.div`
@@ -35,11 +36,19 @@ const S = {
     `,
 }
 
+
+
 const MainHeader= () => {
+    const navigate = useNavigate();
+
+    const handleLogoClick = () => {
+        navigate('/login');
+    };
+
     return (
         <S.Container>
-            <S.Title href="#">WhenBrella</S.Title>
-            <S.Login href="#">로그인</S.Login>
+            <S.Title>WhenBrella</S.Title>
+            <S.Login onClick={handleLogoClick}>로그인</S.Login>
         </S.Container>
     );
 }
