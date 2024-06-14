@@ -14,8 +14,12 @@ const Wrapper = styled.div`
 `;
 
 
-export default function MainWrapper() {
+export default function MainWrapper({ children }) {
     return (
-        <Wrapper/>
+        
+        <Wrapper>
+            { children }
+        </Wrapper>
+        
     );
 }
